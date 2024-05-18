@@ -2,8 +2,8 @@
 
 //set the values here
 $db_url = "localhost";
-$db_user = "admin";
-$db_password = "Re:Start!9";
+$db_user = "web_user";
+$db_password = "password";
 $db_name = "cafe_db";
 
 try {

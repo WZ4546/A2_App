@@ -65,3 +65,11 @@ CREATE TABLE order_item (
   FOREIGN KEY (order_number) REFERENCES `order` (order_number),
   FOREIGN KEY (product_id) REFERENCES product (id)
   );
+
+CREATE USER 'api_user'@'%' IDENTIFIED BY 'password';
+GRANT SELECT ON cafe_db.* TO 'api_user'@'%';
+FLUSH PRIVILEGES;
+
+CREATE USER 'web_user'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON cafe_db.* TO 'web_user'@'%';
+FLUSH PRIVILEGES;
