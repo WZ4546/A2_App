@@ -1,7 +1,7 @@
 <?php
 
 //set the values here
-$db_url = "localhost";
+$db_url = "database-2.cdwozovmcy8n.us-east-1.rds.amazonaws.com";
 $db_user = "web_user";
 $db_password = "password";
 $db_name = "cafe_db";
